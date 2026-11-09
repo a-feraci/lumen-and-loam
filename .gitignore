@@ -1,0 +1,5 @@
+.DS_Store
+*.log
+study-backups/
+node_modules/
+.openai/
