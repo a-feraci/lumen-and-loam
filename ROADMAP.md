@@ -73,6 +73,14 @@ Next creature animation idea: approve the new forms, then make small matching bl
 - Places picker in the persistent study toolbar, with two home appearances and two collectible forest locations.
 - Rosepetal Glade: full pink fairy palette, floral pink mushroom forest and four pink fairy creature variants; collected from the invitation after the three creature trials.
 - Snowglass Forest: snow/frost palette, snowy forest and four winter creature variants; collected at the end of the four-fragment lantern letter.
-- Temporary previews let learners try undiscovered places without changing progress or saved selection. Collected themes can be revisited anytime.
+- The first release included temporary previews; the mystery-lock correction below removes them. Collected themes can be revisited anytime.
 - Earlier clearing and letter discoveries receive collection credit. Collection and selection travel in JSON backups alongside learning records.
 - Sparkles/snow respect motion controls. Future places can use the same catalog, eligibility, reward and palette pattern.
+
+## Mystery-lock correction — November 9, 2026
+- Removed uncollected-place previews and their temporary theme state.
+- Locked picker cards hide names, art, descriptions, and destination-specific instructions. Tiny pink petal / snowflake clues keep a hint of curiosity.
+- Earned invitations reveal places at their discovery; collection makes their full picker cards and saved selection available. Existing collections and study records remain intact.
+
+## Nova’s living-world direction — future ideas
+See `docs/LIVING_WORLD_VISION.md` for the complete brainstorm: location-specific teachers/games/lore/soundscapes/shops, daily/weekly/monthly focus gardens and different plants, eventual distraction-blocking app, rewarded getting-started quests and earned currency, nursery/care/breeding, random finds/mischief and a bank, then real accounts, shared classes/pets, cross-user class branches, and integrated AI. Inspirations include lofi.co, Forest, Neopets, Petz/Dogz/Catz 3–5, and Fortnite onboarding quests. These ideas are recorded for future small releases, not implemented by the mystery-lock fix.
