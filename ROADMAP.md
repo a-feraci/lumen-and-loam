@@ -68,3 +68,11 @@ Next: collect real use observations from both classes, then choose one learning 
 Shipped: independent notebook pages, draft persistence, saved-note browsing/search, floating/resizable/minimizable notebook and wide-screen docking; persistent tools toolbar; independent timer/sound windows using existing controls; nonmodal discovered-game windows and a Recess replay menu; a saved optional cross-page riddle letter; illustrated Glimmermoth and separate StarFern artwork for all four creatures. See `docs/STUDY_DESK.md`.
 
 Next creature animation idea: approve the new forms, then make small matching blink, wing-flex, paw, or antler-light frame sets. Preserve identity, transparent edges, reduced-motion support, and optional glow. Current artwork swaps and hover glows are shipped; pose-frame animation is not yet implemented.
+
+## Collectible places release — November 9, 2026
+- Places picker in the persistent study toolbar, with two home appearances and two collectible forest locations.
+- Rosepetal Glade: full pink fairy palette, floral pink mushroom forest and four pink fairy creature variants; collected from the invitation after the three creature trials.
+- Snowglass Forest: snow/frost palette, snowy forest and four winter creature variants; collected at the end of the four-fragment lantern letter.
+- Temporary previews let learners try undiscovered places without changing progress or saved selection. Collected themes can be revisited anytime.
+- Earlier clearing and letter discoveries receive collection credit. Collection and selection travel in JSON backups alongside learning records.
+- Sparkles/snow respect motion controls. Future places can use the same catalog, eligibility, reward and palette pattern.

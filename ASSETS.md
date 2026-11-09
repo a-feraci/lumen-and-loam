@@ -25,3 +25,10 @@ Both are optimized WebP encodings of original generated PNGs; no third-party sto
 - `assets/mossling-starfern.webp`, `assets/hushhare-starfern.webp`, `assets/dewfawn-starfern.webp`: edits preserving the corresponding day creature's identity and pose while changing the coat, materials, and luminous details for the night forest.
 
 All five were made with the built-in image generator. They retain genuine alpha transparency and are resized/encoded as WebP for the site; the generated PNG originals are retained separately. Existing day art remains. `creature-art.js` swaps actual image sources with the forest theme. Hover glow is CSS; these files are not animated sprites.
+
+## Rosepetal Glade and Snowglass Forest
+- `rosepetal-forest.webp`: an original flower-covered pink fairy clearing with pink mushrooms, sparkling dew and a brook.
+- `snowglass-forest.webp`: an original snowy clearing with frosted trees, winter plants and a partially frozen brook.
+- Each of Mossling, Hushhare, Dewfawn and Glimmermoth has `-rosepetal.webp` and `-snowglass.webp` variants. The former uses pink botanical fairy materials and wings; the latter uses pearl fur, ice-blue frost and crystal dew.
+
+All ten illustrations were made with the built-in image generator for this project, with the existing artwork as style/identity references. Transparent creature edges are preserved. Website files are resized WebP encodings; generated PNG originals remain separate. No third-party stock assets were introduced.

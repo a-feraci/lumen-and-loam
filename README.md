@@ -53,3 +53,6 @@ Both use shared lessons, independently sampled assessments, separate class noteb
 
 ## Open study desk
 The bottom study toolbar opens a nonblocking notebook, timer, sounds, and discovered paths. Keep notes open during a lesson, browse old notes, and return to unfinished page drafts. Notes can float or dock beside the lesson on a wide display. Games also use independent windows. New StarFern creature artwork follows night mode. See `docs/STUDY_DESK.md` for behavior, draft storage, and checks.
+
+## Collectible forest places
+Use Places in the study toolbar to preview or select a forest. The three creature trials reveal Rosepetal Glade; the lantern-letter trail reveals Snowglass Forest. Each includes a complete interface palette and matching creature illustrations. Collect a location at its discovery, then revisit anytime. Earlier discoveries are preserved. See `docs/FOREST_PLACES.md`; run `node tests/forest-places.test.cjs` for state and migration checks.
