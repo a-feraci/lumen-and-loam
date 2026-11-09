@@ -12,10 +12,10 @@
 - New transparent Hushhare and Dewfawn graphics, matching the existing Mossling.
 - Class orientation shells, card stars/highlights, expanded Field Guide.
 
-## Next recommended milestone: one complete learning loop
-Build one pilot lesson (philosophy basics or ethics of AI), its substantial quiz, a flashcard set, linked notebook result, and optional study tasks. Use it to settle the reusable lesson format before filling all classes. Then make the chat starter prompts and publishing workflow around that tested format.
+## Next recommended milestone
+Use the published Philosophy Foundations pilot, then develop the first AI & Technology Ethics lesson using the same structure. The lesson/assessment/notebook/task loop is implemented; flashcard practice remains next.
 
-## Requested learning features — planned, not implemented
+## Learning direction — pilot now shipped; remaining work below
 1. Each class has its own teacher chat; this conversation remains project HQ. Decide lesson structure and publication workflow together after this release.
 2. Every lesson includes a real assessment, large enough to reward attentive learning. Shuffle question order AND answer choices independently, with stable answer IDs; never assign correct letters by a predictable sequence. Include application, reasoning, and misconception checks, not just recall. Proposed pilot: a 24+ question bank, 15–20 questions per attempt, configurable pass mark; exact defaults remain to be agreed.
 3. Save each quiz attempt to its notebook with topic/class/lesson, timestamp, score/possible score, pass threshold, answers, version, and useful review feedback. Keep attempts distinct and allow retakes without overwriting history.
@@ -39,3 +39,18 @@ Build one pilot lesson (philosophy basics or ethics of AI), its substantial quiz
 - Exportable learning transcript, accessibility preferences, keyboard-friendly study sessions, and a progress dashboard that values understanding over streaks.
 - Content/version migration checks, source-quality guidance, and a consistent published versus personal-content distinction.
 - Study records remain private locally. Uploaded lessons should be personal by default; public publication must be an explicit separate action.
+
+## Philosophy pilot release — November 9, 2026
+Implemented: a published Philosophy Foundations class/lesson; six learning goals; original teaching text, worked cases, reflection, section stars/highlights, source links and a small set of cross-subject connections; suggested tasks; a 24-question bank with balanced 18-question assessments, independently shuffled choices/questions, 80% pass mark, saved/resumable drafts, explanation review, separate dated retakes, notebook history and calendar entries. Backups preserve these records. `docs/TEACHER_CHATS.md` defines roles, starter prompts, and the publishing workflow. AI & Technology Ethics is next, not yet published.
+
+The former public game directory is retired. Glimmermoth remains a discoverable visitor; after three levels, a new sighting appears near the grove. A later pair-garden achievement reveals the next creature. Existing saved game progress preserves access. Field Guide prose now hints rather than listing the games. This is a playful discovery system, not a security boundary.
+
+## Nova's new notes — planned
+- **Persistent quick toolbar:** small timer, sound/music, and quick-note icons beside the day/night toggle, visible in both desktop rail sizes and the mobile header. They open useful panels without overwhelming the layout; share the existing persisted timer/audio/note state rather than resetting it.
+- **Connections as branches:** expand the pilot's three cross-subject links into an interactive concept garden with backlink trails and personal connections.
+- **Quiet-clearing nursery:** hatch and raise a personal creature; potentially unlock species through discoveries and select a grown creature as a class teacher. Plan appearance, growth, agency, and purely optional rewards; avoid turning learning into a punitive chore.
+- **Old-internet discovery:** cryptic but fair, accessible clues; connected discoveries across pages; “what if?” interactions; no compulsory spoilers or obvious game catalog. A solved puzzle can reveal a place to inspect, not simply a menu item.
+- **A deeply hidden cybersecurity class:** design an in-world multi-step trail for curious explorers, then reveal a real defensive cybersecurity course. Keep this out of the public class atlas and do not implement a fake locked course yet. Never use personal data or actual security vulnerabilities as a puzzle mechanism. A future opt-in hint ladder can help without spoiling everyone else's exploration.
+- **Teacher rewards:** unlock creature species/cosmetics as optional teacher choices; keep all essential subject content available independently of casual game skill (the special cybersecurity discovery is a deliberately optional bonus path).
+
+- Coordinate simultaneous browser tabs before treating separate tabs as concurrent editors; current study state is one local snapshot, and backups are the durable transfer mechanism.

@@ -1,6 +1,6 @@
 # Learning packs — draft for the next milestone
 
-Status: requirements and proposed contract only. No learning-pack uploader, quiz engine, or creature hiring UI is implemented in this release. Agree the lesson format using one pilot lesson before freezing a schema.
+Status: requirements and proposed contract only. The Philosophy pilot now has a quiz engine with notebook/calendar results, retained retakes and resumable drafts. A learning-pack uploader and creature hiring UI are still planned. The pilot establishes an initial lesson format; the external pack schema remains a draft.
 
 ## User journey
 Download a template and its instructions → ask a teacher chat to fill it with a chosen topic → upload the JSON → inspect validation and a preview → add the personal class/lesson, quiz bank, flashcards and optional tasks. A full site backup is a separate restore operation, never confused with a pack import. A personal upload must never publish itself to GitHub.

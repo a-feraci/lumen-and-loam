@@ -1,0 +1,746 @@
+{
+  "schemaVersion": 1,
+  "kind": "lesson-authoring-template",
+  "instructions": "Authoring only; upload is not implemented. Replace all REPLACE text, terms, objectives, recap and metadata. Verify every key and source. Publication requires review.",
+  "lesson": {
+    "id": "replace-lesson-id",
+    "classId": "replace-class-id",
+    "revision": 1,
+    "bankRevision": 1,
+    "title": "REPLACE: focused lesson title",
+    "subtitle": "REPLACE: class / lesson number",
+    "minutes": 35,
+    "passMark": 80,
+    "perObjective": 3,
+    "guidingQuestion": "REPLACE: guiding question",
+    "objectives": [
+      {
+        "id": "inquiry",
+        "text": "Recognize philosophical inquiry and clarify an ambiguous question."
+      },
+      {
+        "id": "branches",
+        "text": "Distinguish major philosophical branches and their overlapping questions."
+      },
+      {
+        "id": "arguments",
+        "text": "Identify premises, conclusions, and missing assumptions."
+      },
+      {
+        "id": "inference",
+        "text": "Distinguish deductive validity, soundness, and inductive support."
+      },
+      {
+        "id": "objections",
+        "text": "Use counterexamples and charitable objections to improve a claim."
+      },
+      {
+        "id": "application",
+        "text": "Separate factual and value questions, then connect them responsibly."
+      }
+    ],
+    "terms": [
+      [
+        "Claim",
+        "A statement presented as true or false."
+      ],
+      [
+        "Premise",
+        "A reason offered in support of a conclusion."
+      ],
+      [
+        "Conclusion",
+        "The claim an argument asks you to accept."
+      ],
+      [
+        "Validity",
+        "A deductive argument is valid when its premises cannot all be true while its conclusion is false."
+      ],
+      [
+        "Soundness",
+        "A deductive argument is sound when it is valid and all of its premises are true."
+      ],
+      [
+        "Counterexample",
+        "A case that exposes a problem in a general claim, definition, or inference."
+      ],
+      [
+        "Normative",
+        "Concerned with what should be done, valued, or permitted."
+      ],
+      [
+        "Empirical",
+        "Investigated using observation or experience."
+      ]
+    ],
+    "sections": [
+      {
+        "id": "begin",
+        "title": "REPLACE: section title",
+        "sourceIds": [],
+        "paragraphs": [
+          "REPLACE: original teaching text"
+        ],
+        "example": "REPLACE: worked example"
+      },
+      {
+        "id": "branches",
+        "title": "REPLACE: section title",
+        "sourceIds": [],
+        "paragraphs": [
+          "REPLACE: original teaching text"
+        ],
+        "example": "REPLACE: worked example"
+      },
+      {
+        "id": "arguments",
+        "title": "REPLACE: section title",
+        "sourceIds": [],
+        "paragraphs": [
+          "REPLACE: original teaching text"
+        ],
+        "example": "REPLACE: worked example"
+      },
+      {
+        "id": "inference",
+        "title": "REPLACE: section title",
+        "sourceIds": [],
+        "paragraphs": [
+          "REPLACE: original teaching text"
+        ],
+        "example": "REPLACE: worked example"
+      },
+      {
+        "id": "objections",
+        "title": "REPLACE: section title",
+        "sourceIds": [],
+        "paragraphs": [
+          "REPLACE: original teaching text"
+        ],
+        "example": "REPLACE: worked example"
+      },
+      {
+        "id": "application",
+        "title": "REPLACE: section title",
+        "sourceIds": [],
+        "paragraphs": [
+          "REPLACE: original teaching text"
+        ],
+        "example": "REPLACE: worked example"
+      }
+    ],
+    "recap": [
+      "Clarify the question before defending an answer.",
+      "Classify a question to choose useful lenses, while allowing overlap.",
+      "Make premises, conclusions, and assumptions explicit.",
+      "Test an inference separately from the truth of its premises.",
+      "Use objections to revise the right claim, not a caricature.",
+      "Combine evidence about effects with explicit reasons about values."
+    ],
+    "connections": [],
+    "tasks": [],
+    "sources": [],
+    "questions": [
+      {
+        "id": "i1",
+        "objectiveId": "inquiry",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "i2",
+        "objectiveId": "inquiry",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "i3",
+        "objectiveId": "inquiry",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "i4",
+        "objectiveId": "inquiry",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "b1",
+        "objectiveId": "branches",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "b2",
+        "objectiveId": "branches",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "b3",
+        "objectiveId": "branches",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "b4",
+        "objectiveId": "branches",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "a1",
+        "objectiveId": "arguments",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "a2",
+        "objectiveId": "arguments",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "a3",
+        "objectiveId": "arguments",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "a4",
+        "objectiveId": "arguments",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "d1",
+        "objectiveId": "inference",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "d2",
+        "objectiveId": "inference",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "d3",
+        "objectiveId": "inference",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "d4",
+        "objectiveId": "inference",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "o1",
+        "objectiveId": "objections",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "o2",
+        "objectiveId": "objections",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "o3",
+        "objectiveId": "objections",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "o4",
+        "objectiveId": "objections",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "p1",
+        "objectiveId": "application",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "p2",
+        "objectiveId": "application",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "p3",
+        "objectiveId": "application",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      },
+      {
+        "id": "p4",
+        "objectiveId": "application",
+        "prompt": "REPLACE: assess this objective with a clear question",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "REPLACE: choice 1"
+          },
+          {
+            "id": "choice-1",
+            "text": "REPLACE: choice 2"
+          },
+          {
+            "id": "choice-2",
+            "text": "REPLACE: choice 3"
+          },
+          {
+            "id": "choice-3",
+            "text": "REPLACE: choice 4"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "REPLACE: explain why the keyed answer is best"
+      }
+    ]
+  }
+}

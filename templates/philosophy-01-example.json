@@ -1,0 +1,838 @@
+{
+  "schemaVersion": 1,
+  "kind": "lesson-authoring-example",
+  "lesson": {
+    "id": "philosophy-01",
+    "classId": "philosophy",
+    "revision": 1,
+    "bankRevision": 1,
+    "title": "What makes a good reason?",
+    "subtitle": "Philosophy Foundations · Lesson 01",
+    "minutes": 35,
+    "passMark": 80,
+    "perObjective": 3,
+    "guidingQuestion": "How can we move from “this feels true” to a position we can explain, test, and revise?",
+    "objectives": [
+      {
+        "id": "inquiry",
+        "text": "Recognize philosophical inquiry and clarify an ambiguous question."
+      },
+      {
+        "id": "branches",
+        "text": "Distinguish major philosophical branches and their overlapping questions."
+      },
+      {
+        "id": "arguments",
+        "text": "Identify premises, conclusions, and missing assumptions."
+      },
+      {
+        "id": "inference",
+        "text": "Distinguish deductive validity, soundness, and inductive support."
+      },
+      {
+        "id": "objections",
+        "text": "Use counterexamples and charitable objections to improve a claim."
+      },
+      {
+        "id": "application",
+        "text": "Separate factual and value questions, then connect them responsibly."
+      }
+    ],
+    "terms": [
+      [
+        "Claim",
+        "A statement presented as true or false."
+      ],
+      [
+        "Premise",
+        "A reason offered in support of a conclusion."
+      ],
+      [
+        "Conclusion",
+        "The claim an argument asks you to accept."
+      ],
+      [
+        "Validity",
+        "A deductive argument is valid when its premises cannot all be true while its conclusion is false."
+      ],
+      [
+        "Soundness",
+        "A deductive argument is sound when it is valid and all of its premises are true."
+      ],
+      [
+        "Counterexample",
+        "A case that exposes a problem in a general claim, definition, or inference."
+      ],
+      [
+        "Normative",
+        "Concerned with what should be done, valued, or permitted."
+      ],
+      [
+        "Empirical",
+        "Investigated using observation or experience."
+      ]
+    ],
+    "sections": [
+      {
+        "id": "begin",
+        "title": "1 · Curiosity becomes a method",
+        "sourceIds": [
+          "origins",
+          "methods"
+        ],
+        "paragraphs": [
+          "Imagine a future learning lab offers a system that chooses your next lesson. It often predicts what you will enjoy. Should it also choose what you ought to learn? Before answering, notice how many questions are hiding in that one sentence.",
+          "Philosophy investigates fundamental questions about reality, knowledge, reasoning, and value. A philosophical conversation does more than announce a preference: it clarifies a question, offers reasons, considers objections, and asks whether a conclusion deserves our confidence. Philosophers can disagree while still improving the question and exposing a weak assumption.",
+          "Start by asking what a key word means. Does “good” mean enjoyable, accurate, fair, useful, or morally right? If one person means enjoyable and another means fair, they may be answering different questions. Clarification does not settle the dispute; it makes the dispute easier to investigate.",
+          "Philosophy has diverse traditions across the world. This opening lesson introduces a small set of reasoning tools rather than treating one tradition as the whole subject. Later lessons will compare thinkers in their historical and cultural contexts."
+        ],
+        "example": "Try it: rewrite “Is technology good?” as two narrower questions. For example: “Does this tool improve recall in this setting?” and “Should a school require students to use it?” The first invites measurement; the second also requires reasons about values."
+      },
+      {
+        "id": "branches",
+        "title": "2 · Six paths through the same forest",
+        "sourceIds": [
+          "overview"
+        ],
+        "paragraphs": [
+          "Branches are useful lenses, not sealed boxes. Ethics examines how we should act and what we owe one another. Epistemology examines knowledge, justification, and evidence. Metaphysics asks about reality, existence, identity, and possibility. Logic studies inference and the support reasons give to conclusions. Aesthetics investigates art, beauty, interpretation, and aesthetic experience. Social and political philosophy examines justice, institutions, authority, and shared life.",
+          "Our learning system crosses several branches. “What would justify trusting its recommendation?” is epistemological. “Should it be allowed to manipulate attention?” is ethical. “Would a digital copy still be the same person?” raises metaphysical questions. “Does this conclusion follow from these premises?” is logical. “Can a machine-made work have artistic value?” invites aesthetics. “Who should govern the system?” brings in political philosophy.",
+          "A question can belong to more than one branch. Classifying it helps you choose tools; it does not prevent other subjects from contributing."
+        ],
+        "example": "Notice the branch: psychology can investigate why a recommendation feels trustworthy. Epistemology asks whether that feeling is a good reason to trust it. One finding can inform the other without making them the same question."
+      },
+      {
+        "id": "arguments",
+        "title": "3 · Give a claim roots",
+        "sourceIds": [
+          "arguments"
+        ],
+        "paragraphs": [
+          "In philosophy, an argument is a set of reasons offered for a conclusion, not necessarily a quarrel. “I dislike the recommendation system” expresses a position. “The system exposes private notes without consent; exposing private notes without consent is wrong in this case; therefore this use of the system is wrong” supplies an argument.",
+          "Write the reasons as premises and the supported claim as a conclusion. Words such as “because” and “therefore” can help, but their position is not a guarantee. A conclusion may appear first in ordinary speech. A paragraph can also explain why something happened without arguing that it should happen.",
+          "Many arguments leave a bridge unstated. “This app improves test scores, so every student should be required to use it” needs more than a claim about scores. It also relies on assumptions about compulsion, privacy, cost, accessibility, and what education is for. Identifying those assumptions tells us what still needs defending."
+        ],
+        "example": "Argument map: P1: If a library promises confidentiality, it ought to protect borrowing records in this case. P2: This library promises confidentiality. C: This library ought to protect borrowing records in this case. You can inspect the conditional premise as well as the inference."
+      },
+      {
+        "id": "inference",
+        "title": "4 · Following is different from being true",
+        "sourceIds": [
+          "arguments",
+          "inferences"
+        ],
+        "paragraphs": [
+          "A deductive argument aims to make its conclusion unavoidable if its premises are true. Validity concerns that relationship: could all the premises be true while the conclusion is false? If yes, the argument is invalid. A valid argument can still have a false premise. Soundness adds the requirement that every premise actually be true.",
+          "Use a deliberately fictional example. All mosslings can teleport. Pip is a mossling. Therefore Pip can teleport. The form is valid: accepting both premises commits you to the conclusion. The form alone gives us no reason to think mosslings really teleport. An invalid argument can also happen to have a true conclusion; a lucky result does not repair an unreliable inference.",
+          "Inductive reasoning supports a conclusion to a degree rather than guaranteeing it. A varied sample of learners who improve with a study method may support a prediction about similar learners. Sample quality, alternative explanations, and the scope of the prediction matter. An observation about one enthusiastic volunteer gives much weaker support for a claim about everybody."
+        ],
+        "example": "Test the inference: “If a lamp has power, it glows. This lamp glows. Therefore it has power.” The conclusion need not follow: the glow might be reflected moonlight. This is the pattern “if P then Q; Q; therefore P.” Contrast “if P then Q; P; therefore Q,” which is valid."
+      },
+      {
+        "id": "objections",
+        "title": "5 · Help an idea survive a real test",
+        "sourceIds": [
+          "methods",
+          "analysis"
+        ],
+        "paragraphs": [
+          "A counterexample tests the scope of a claim. “Every useful learning activity is enjoyable” is challenged by a useful practice session that feels frustrating. One genuine exception defeats that universal wording; it does not show that enjoyment is irrelevant to learning. Revise the claim to fit what the example actually establishes.",
+          "A charitable objection addresses a reasonable version of another person’s position. First restate the position in a way its supporter could recognize. Then identify the premise, inference, or consequence you question. Replacing “some AI assistance can help” with “AI should do all thinking for us” attacks a different, weaker claim.",
+          "A thought experiment explores what a concept or principle would imply in an imagined situation. It can expose a tension, but an imagined case by itself cannot measure how frequently something happens in the world. When a conclusion depends on actual effects, seek appropriate empirical evidence too."
+        ],
+        "example": "Compare: “Your idea is silly” with “Your proposal assumes every student can access the tool. What happens to a student who cannot?” The second identifies a relevant assumption and a concrete test."
+      },
+      {
+        "id": "application",
+        "title": "6 · Bring logic and empathy to the same table",
+        "sourceIds": [
+          "overview",
+          "methods"
+        ],
+        "paragraphs": [
+          "Consider a fictional school deciding whether to require an AI study assistant. One view favors a requirement because all students should benefit from effective support. Another favors an optional tool because students should retain control over their notes and learning choices. Neither position is established merely by describing it sympathetically.",
+          "Ask factual questions: Does the tool improve learning? For which students, under which conditions, and compared with what? Ask value questions: How much weight should autonomy, fairness, privacy, and learning outcomes have? A fact about popularity does not by itself show that a requirement is justified; a value principle also needs an account of the relevant facts.",
+          "For a defensible position, state a tentative conclusion, list the premises, name one assumption, offer the strongest objection you can, and say what would change your mind. Listening to affected people can reveal missing facts and overlooked harms. Empathy helps identify what deserves attention; careful reasoning helps assess what follows.",
+          "You do not have to solve the entire dispute today. A useful result might be a narrower proposal, a clearer disagreement about values, or a research question that would decide between two explanations. That is progress you can build on."
+        ],
+        "example": "Your exercise: write 150–250 words about whether this fictional school should require the assistant. Include two premises, one explicit value assumption, a fair objection, a reply, and a specific piece of evidence that could change your view. Save it to your Philosophy notebook; it is reflection, not automatically graded."
+      }
+    ],
+    "recap": [
+      "Clarify the question before defending an answer.",
+      "Classify a question to choose useful lenses, while allowing overlap.",
+      "Make premises, conclusions, and assumptions explicit.",
+      "Test an inference separately from the truth of its premises.",
+      "Use objections to revise the right claim, not a caricature.",
+      "Combine evidence about effects with explicit reasons about values."
+    ],
+    "connections": [
+      {
+        "classId": "psychology",
+        "title": "Belief and confidence",
+        "text": "Why a claim feels true is different from whether the evidence supports it."
+      },
+      {
+        "classId": "ai-ethics",
+        "title": "Who chooses the next lesson?",
+        "text": "Apply the same argument map to autonomy, privacy, and AI study systems."
+      },
+      {
+        "classId": "logic",
+        "title": "Follow the inference",
+        "text": "Next, explore valid forms and tempting reasoning mistakes in more depth."
+      }
+    ],
+    "tasks": [
+      {
+        "id": "read",
+        "title": "Read Philosophy 01: What makes a good reason?",
+        "emoji": "📖"
+      },
+      {
+        "id": "reflect",
+        "title": "Map an argument about an AI study assistant",
+        "emoji": "🌱"
+      },
+      {
+        "id": "quiz",
+        "title": "Take the Philosophy 01 assessment",
+        "emoji": "✦"
+      }
+    ],
+    "sources": [
+      {
+        "id": "origins",
+        "title": "OpenStax · 1.1 What Is Philosophy?",
+        "url": "https://openstax.org/books/introduction-philosophy/pages/1-1-what-is-philosophy"
+      },
+      {
+        "id": "overview",
+        "title": "OpenStax · 1.4 An Overview of Contemporary Philosophy",
+        "url": "https://openstax.org/books/introduction-philosophy/pages/1-4-an-overview-of-contemporary-philosophy"
+      },
+      {
+        "id": "methods",
+        "title": "OpenStax · 5.1 Philosophical Methods for Discovering Truth",
+        "url": "https://openstax.org/books/introduction-philosophy/pages/5-1-philosophical-methods-for-discovering-truth"
+      },
+      {
+        "id": "arguments",
+        "title": "OpenStax · 5.3 Arguments",
+        "url": "https://openstax.org/books/introduction-philosophy/pages/5-3-arguments"
+      },
+      {
+        "id": "inferences",
+        "title": "OpenStax · 5.4 Types of Inferences",
+        "url": "https://openstax.org/books/introduction-philosophy/pages/5-4-types-of-inferences"
+      },
+      {
+        "id": "analysis",
+        "title": "OpenStax · 7.1 What Epistemology Studies",
+        "url": "https://openstax.org/books/introduction-philosophy/pages/7-1-what-epistemology-studies"
+      }
+    ],
+    "questions": [
+      {
+        "id": "i1",
+        "objectiveId": "inquiry",
+        "prompt": "Which opening move most directly clarifies “Is this a good learning tool?”?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "Ask which meaning of “good” is at issue."
+          },
+          {
+            "id": "choice-1",
+            "text": "Count how many people already use it."
+          },
+          {
+            "id": "choice-2",
+            "text": "Decide which answer sounds most reassuring."
+          },
+          {
+            "id": "choice-3",
+            "text": "Treat every meaning of “good” as interchangeable."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "Clarifying the key term separates questions that may need different reasons."
+      },
+      {
+        "id": "i2",
+        "objectiveId": "inquiry",
+        "prompt": "Two students disagree about whether a course is fair. What should they check first?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "Whether they mean the same thing by fairness."
+          },
+          {
+            "id": "choice-1",
+            "text": "Which student speaks with greater confidence."
+          },
+          {
+            "id": "choice-2",
+            "text": "Whether disagreement makes reasoning pointless."
+          },
+          {
+            "id": "choice-3",
+            "text": "Whether a popular view must be the fair one."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "A disagreement may involve different definitions; identifying them makes the actual dispute clearer."
+      },
+      {
+        "id": "i3",
+        "objectiveId": "inquiry",
+        "prompt": "A discussion ends without agreement but reveals a hidden assumption. What has it achieved?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "It has clarified an assumption for further testing."
+          },
+          {
+            "id": "choice-1",
+            "text": "It has proved every original belief false."
+          },
+          {
+            "id": "choice-2",
+            "text": "It has established that no answer can be better supported."
+          },
+          {
+            "id": "choice-3",
+            "text": "It has failed because consensus is the only useful outcome."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "Clarification and better objections can advance inquiry even before agreement."
+      },
+      {
+        "id": "i4",
+        "objectiveId": "inquiry",
+        "prompt": "Which question is the best refinement of “Is technology good?” for a focused investigation?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "Should this school require this tool under a stated privacy policy?"
+          },
+          {
+            "id": "choice-1",
+            "text": "Is every technology good in every possible situation?"
+          },
+          {
+            "id": "choice-2",
+            "text": "Do people sometimes say that technology is good?"
+          },
+          {
+            "id": "choice-3",
+            "text": "Which technology has the most attractive logo?"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "The school question narrows the tool, decision, and circumstances enough for targeted reasons."
+      },
+      {
+        "id": "b1",
+        "objectiveId": "branches",
+        "prompt": "Which question is primarily epistemological?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "What evidence justifies trusting this recommendation?"
+          },
+          {
+            "id": "choice-1",
+            "text": "What color should the interface be?"
+          },
+          {
+            "id": "choice-2",
+            "text": "What punishment should a dishonest user receive?"
+          },
+          {
+            "id": "choice-3",
+            "text": "Which processor runs the interface fastest?"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "Epistemology concerns knowledge, evidence, and justification."
+      },
+      {
+        "id": "b2",
+        "objectiveId": "branches",
+        "prompt": "“Would a digital copy remain the same person?” most directly raises which kind of question?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "Metaphysics: the question concerns personal identity."
+          },
+          {
+            "id": "choice-1",
+            "text": "Ethics, because all questions about people concern duties only."
+          },
+          {
+            "id": "choice-2",
+            "text": "Aesthetics, because every digital object is a work of art."
+          },
+          {
+            "id": "choice-3",
+            "text": "Logic, because any sentence containing “would” is an inference."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "Personal identity is a metaphysical topic, although related ethical questions can follow."
+      },
+      {
+        "id": "b3",
+        "objectiveId": "branches",
+        "prompt": "A discussion asks whether machine-made art can be beautiful. Which branch is most directly relevant?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "Aesthetics."
+          },
+          {
+            "id": "choice-1",
+            "text": "Epistemology alone."
+          },
+          {
+            "id": "choice-2",
+            "text": "Formal logic alone."
+          },
+          {
+            "id": "choice-3",
+            "text": "Metaphysics alone."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "Aesthetics investigates art, beauty, interpretation, and aesthetic experience."
+      },
+      {
+        "id": "b4",
+        "objectiveId": "branches",
+        "prompt": "A question asks both whether AI advice is justified and whether using it is fair. How should it be classified?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "It can involve epistemology and ethics at the same time."
+          },
+          {
+            "id": "choice-1",
+            "text": "It must belong to whichever branch was named first."
+          },
+          {
+            "id": "choice-2",
+            "text": "It cannot be philosophical because it involves a tool."
+          },
+          {
+            "id": "choice-3",
+            "text": "It belongs to logic only because two ideas are connected."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "Philosophical branches overlap; justification and fairness introduce distinct but connected lenses."
+      },
+      {
+        "id": "a1",
+        "objectiveId": "arguments",
+        "prompt": "“Protect these notes because you promised confidentiality.” Which claim is the conclusion?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "These notes should be protected."
+          },
+          {
+            "id": "choice-1",
+            "text": "A promise of confidentiality was made."
+          },
+          {
+            "id": "choice-2",
+            "text": "Every promise has already been kept."
+          },
+          {
+            "id": "choice-3",
+            "text": "No argument is present because there is only one sentence."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "The requested protection is what the stated reason supports."
+      },
+      {
+        "id": "a2",
+        "objectiveId": "arguments",
+        "prompt": "“The tool improves scores; therefore everyone must use it.” What still needs defending?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "A defensible bridge from benefit to compulsory use."
+          },
+          {
+            "id": "choice-1",
+            "text": "Only whether the word “therefore” appears at the beginning."
+          },
+          {
+            "id": "choice-2",
+            "text": "The claim that any score improvement removes all privacy concerns."
+          },
+          {
+            "id": "choice-3",
+            "text": "The claim that a conclusion must always come before a premise."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "A factual benefit alone does not establish compulsory use; the normative bridge requires reasons."
+      },
+      {
+        "id": "a3",
+        "objectiveId": "arguments",
+        "prompt": "Which statement best describes a premise?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "A reason offered for a conclusion."
+          },
+          {
+            "id": "choice-1",
+            "text": "The last sentence of every paragraph."
+          },
+          {
+            "id": "choice-2",
+            "text": "Any sentence that contains an emotional word."
+          },
+          {
+            "id": "choice-3",
+            "text": "A claim that has already been proven beyond doubt."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "Premises are defined by their supporting role, not by position or guaranteed truth."
+      },
+      {
+        "id": "a4",
+        "objectiveId": "arguments",
+        "prompt": "Why are words such as “because” and “therefore” useful but insufficient for identifying an argument?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "You still need to identify the support relationship."
+          },
+          {
+            "id": "choice-1",
+            "text": "Their presence guarantees that every claim is true."
+          },
+          {
+            "id": "choice-2",
+            "text": "They require the conclusion to appear last in all arguments."
+          },
+          {
+            "id": "choice-3",
+            "text": "An argument exists only when both words appear together."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "Signal words offer clues, but the relationship among the claims is what matters."
+      },
+      {
+        "id": "d1",
+        "objectiveId": "inference",
+        "prompt": "All mosslings can teleport. Pip is a mossling. Therefore Pip can teleport. What can we establish from the structure?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "The form is valid; the premises’ truth remains to be checked."
+          },
+          {
+            "id": "choice-1",
+            "text": "The premises must be true because the conclusion follows."
+          },
+          {
+            "id": "choice-2",
+            "text": "The inference is invalid because mosslings are fictional."
+          },
+          {
+            "id": "choice-3",
+            "text": "The argument is sound merely because it has two premises."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "Validity concerns whether the conclusion follows if the premises are true; soundness requires true premises too."
+      },
+      {
+        "id": "d2",
+        "objectiveId": "inference",
+        "prompt": "What is required for a deductive argument to be sound?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "A valid inference and premises that are all true."
+          },
+          {
+            "id": "choice-1",
+            "text": "A conclusion that happens to be true, regardless of its support."
+          },
+          {
+            "id": "choice-2",
+            "text": "An emotionally persuasive conclusion and a large audience."
+          },
+          {
+            "id": "choice-3",
+            "text": "Premises that are widely accepted, even if the inference fails."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "Soundness combines deductive validity with the actual truth of every premise."
+      },
+      {
+        "id": "d3",
+        "objectiveId": "inference",
+        "prompt": "A varied sample supports a prediction that a study method will help similar learners, without guaranteeing it. What kind of support is this?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "Inductive support."
+          },
+          {
+            "id": "choice-1",
+            "text": "Deductive certainty."
+          },
+          {
+            "id": "choice-2",
+            "text": "A proof that no counterevidence can matter."
+          },
+          {
+            "id": "choice-3",
+            "text": "An argument that is invalid solely because it is probabilistic."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "Induction can provide strong but non-guaranteeing support; its quality depends on evidence and scope."
+      },
+      {
+        "id": "d4",
+        "objectiveId": "inference",
+        "prompt": "If a lamp has power, it glows. The lamp glows. Therefore it has power. What is the problem?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "The glow could have another explanation."
+          },
+          {
+            "id": "choice-1",
+            "text": "The first premise cannot be expressed as a conditional."
+          },
+          {
+            "id": "choice-2",
+            "text": "All conclusions about lamps are inductively certain."
+          },
+          {
+            "id": "choice-3",
+            "text": "A true conclusion would automatically make this form valid."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "The form affirms the consequent: “if P then Q; Q” does not by itself establish P."
+      },
+      {
+        "id": "o1",
+        "objectiveId": "objections",
+        "prompt": "Which case challenges “Every useful learning activity is enjoyable”?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "Frustrating practice that improves understanding."
+          },
+          {
+            "id": "choice-1",
+            "text": "An enjoyable session that also improves understanding."
+          },
+          {
+            "id": "choice-2",
+            "text": "A frustrating session that teaches nothing."
+          },
+          {
+            "id": "choice-3",
+            "text": "A useful session that the learner enjoys."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "A universal claim is refuted by one genuine case where the activity is useful but not enjoyable."
+      },
+      {
+        "id": "o2",
+        "objectiveId": "objections",
+        "prompt": "A person claims “Some AI assistance helps learning.” Which response addresses a caricature?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "“So you want machines to do all thinking for everyone.”"
+          },
+          {
+            "id": "choice-1",
+            "text": "“Which kinds of assistance and which learning outcomes?”"
+          },
+          {
+            "id": "choice-2",
+            "text": "“What evidence would show a benefit in this setting?”"
+          },
+          {
+            "id": "choice-3",
+            "text": "“Could some forms of assistance reduce independent practice?”"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "The first response replaces a limited claim with a stronger claim the speaker did not make."
+      },
+      {
+        "id": "o3",
+        "objectiveId": "objections",
+        "prompt": "What can a thought experiment establish by itself?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "It can reveal conceptual tension, not actual frequency."
+          },
+          {
+            "id": "choice-1",
+            "text": "It can determine how often an event actually occurs in a population."
+          },
+          {
+            "id": "choice-2",
+            "text": "It can replace all observation about a tool’s effects."
+          },
+          {
+            "id": "choice-3",
+            "text": "It can guarantee everyone will share the same intuition."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "Imagined cases can test implications, while claims about actual frequency need empirical investigation."
+      },
+      {
+        "id": "o4",
+        "objectiveId": "objections",
+        "prompt": "One counterexample defeats “All useful study is enjoyable.” Which revision is warranted by that result alone?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "Usefulness does not always require enjoyment."
+          },
+          {
+            "id": "choice-1",
+            "text": "Enjoyment never contributes to learning."
+          },
+          {
+            "id": "choice-2",
+            "text": "Every frustrating activity is useful."
+          },
+          {
+            "id": "choice-3",
+            "text": "Useful learning and enjoyment can never occur together."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "The counterexample defeats the universal wording; it does not establish a new universal claim about enjoyment."
+      },
+      {
+        "id": "p1",
+        "objectiveId": "application",
+        "prompt": "A school says a tool is popular, so requiring it is justified. What is missing?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "A defensible value-based bridge to compulsory use."
+          },
+          {
+            "id": "choice-1",
+            "text": "A more colorful description of the tool."
+          },
+          {
+            "id": "choice-2",
+            "text": "A claim that popularity is impossible to measure."
+          },
+          {
+            "id": "choice-3",
+            "text": "Agreement that all popular practices are morally required."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "Popularity is a fact about attitudes, not by itself a justification for requiring a practice."
+      },
+      {
+        "id": "p2",
+        "objectiveId": "application",
+        "prompt": "Which question most directly calls for empirical evidence?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "Does the tool improve long-term recall?"
+          },
+          {
+            "id": "choice-1",
+            "text": "How much should autonomy matter in school policy?"
+          },
+          {
+            "id": "choice-2",
+            "text": "Is compulsory use justified when students object?"
+          },
+          {
+            "id": "choice-3",
+            "text": "What would count as fair treatment of students?"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "The recall comparison investigates an observable effect; the others directly ask about values or standards."
+      },
+      {
+        "id": "p3",
+        "objectiveId": "application",
+        "prompt": "A learner’s experience reveals that a required tool excludes students without reliable access. What should the lab do?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "Investigate the access assumption and revise if needed."
+          },
+          {
+            "id": "choice-1",
+            "text": "Dismiss the experience because empathy cannot inform reasoning."
+          },
+          {
+            "id": "choice-2",
+            "text": "Assume one experience establishes every possible effect of the tool."
+          },
+          {
+            "id": "choice-3",
+            "text": "Treat the original proposal as sound because it was well intended."
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "Affected people can reveal overlooked facts and harms; assess their relevance and investigate the scope."
+      },
+      {
+        "id": "p4",
+        "objectiveId": "application",
+        "prompt": "Which response best combines intellectual humility with a reasoned position?",
+        "choices": [
+          {
+            "id": "choice-0",
+            "text": "“Here is my argument, its strongest objection, and what would change my mind.”"
+          },
+          {
+            "id": "choice-1",
+            "text": "“I am uncertain, so all conclusions are equally supported.”"
+          },
+          {
+            "id": "choice-2",
+            "text": "“My motives are caring, so my inference cannot be mistaken.”"
+          },
+          {
+            "id": "choice-3",
+            "text": "“I will accept new evidence only if it agrees with my conclusion.”"
+          }
+        ],
+        "correctChoiceId": "choice-0",
+        "explanation": "A revisable position can still be explicit and well supported; uncertainty does not erase differences in support."
+      }
+    ]
+  }
+}

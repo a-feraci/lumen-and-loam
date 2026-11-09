@@ -39,3 +39,8 @@ See `ROADMAP.md` for the creature system, lesson publishing, and forest discover
 The forest now uses matching generated day/night scenery, a transparent Mossling illustration, unblurred reflective glass surfaces, a top-positioned moon toggle, and a higher Field Guide link. The Field Guide now covers the purpose, subjects, core workflows, backups, and the creature trails and saved discovery system. See `ASSETS.md` for the image briefs.
 
 See `LEARNING_PACK_SPEC.md` for the draft quiz, flashcard, class-import and creature-teacher requirements. These are planned features, not live learning tools yet.
+
+## First learning release
+Philosophy Foundations now has a published lesson at `#lesson/philosophy-01` with a balanced 18-question assessment from a 24-question bank. Responses and unfinished drafts save locally; every submitted attempt and retake keeps its own dated notebook entry and review snapshot. Assessment results also appear in the calendar and JSON backup. See `docs/TEACHER_CHATS.md` for starter prompts and publication steps, and `docs/PHILOSOPHY_FOUNDATIONS.md` for the course outline. Run the assessment checks with `node tests/learning-core.test.cjs`.
+
+`templates/lesson-template.json` is a future authoring handoff. File upload/import for lessons, flashcards, and teacher hiring are still planned. The former visible game hub has become a sequence of subtle creature sightings, with prior discoveries preserved.
