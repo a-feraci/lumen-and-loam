@@ -19,7 +19,9 @@ In this repository, open **Settings → Pages**. Choose **Deploy from a branch**
 - Browser-generated ambient soundscapes and JSON export/import.
 - Saved StarFern theme, layered glass, animated dimensional vines, and motion controls.
 - Mossling grove that grows leaves as tasks are completed.
-- Optional Glimmermoth constellation game and a persistent blossom discovery.
+- Eight Glimmermoth memory levels, three Hushhare pair gardens, Dewfawn’s lost-seed clue trail, and a connected secret clearing; records included in backups.
+- Desktop compact icon rail and mobile hamburger navigation.
+- Clear spiral-textured timer plus matching transparent Hushhare and Dewfawn artwork.
 - A readable Field Guide and printable design guide.
 
 ## Content and data
@@ -34,4 +36,6 @@ See `ROADMAP.md` for the creature system, lesson publishing, and forest discover
 
 ## Clear-glass visual release
 
-The forest now uses matching generated day/night scenery, a transparent Mossling illustration, unblurred reflective glass surfaces, a top-positioned moon toggle, and a higher Field Guide link. The Field Guide now covers the purpose, subjects, core workflows, backups, and the current one-game discovery system. See `ASSETS.md` for the image briefs.
+The forest now uses matching generated day/night scenery, a transparent Mossling illustration, unblurred reflective glass surfaces, a top-positioned moon toggle, and a higher Field Guide link. The Field Guide now covers the purpose, subjects, core workflows, backups, and the creature trails and saved discovery system. See `ASSETS.md` for the image briefs.
+
+See `LEARNING_PACK_SPEC.md` for the draft quiz, flashcard, class-import and creature-teacher requirements. These are planned features, not live learning tools yet.

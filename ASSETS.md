@@ -13,3 +13,8 @@ Day environment: sophisticated cozy forest learning website backdrop; detailed t
 Night environment edit: preserve the exact scene composition and change lighting/atmosphere/plant glow only; deep indigo, blue-gray, evergreen, lavender, moonlit silver, small moon, bioluminescent edge plants, stars and fireflies; crisp visible forest detail, no fog, no text or UI.
 
 Mossling: a single full-body transparent creature cutout, round ivory/oatmeal plush fur, long folded moss-green fern ears, pearly hazel eyes, tiny paws and a raised paw near a floating seed; delicate flowers and dew, gentle alien fairytale design, tactile 3D materials; no ground rectangle, text, clothing, or other props.
+
+## Creature trails release
+- `assets/hushhare.webp`: generated transparent ivory/lavender plush hare with pearlescent petal ears, fern details and star freckles. Guide to moonpetal matching.
+- `assets/dewfawn.webp`: generated transparent cream fawn with glass leaf antlers, dew, moss details and luminous freckles. Guide to lost-seed clue puzzles.
+Both are optimized WebP encodings of original generated PNGs; no third-party stock art.

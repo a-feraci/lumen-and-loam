@@ -37,19 +37,5 @@
   document.addEventListener('visibilitychange',()=>document.body.classList.toggle('forest-away',document.hidden));
   data.discoveries ||= {};
   document.body.classList.toggle('grove-awakened',!!data.discoveries.constellation);
-  document.getElementById('glimmermoth').onclick=openConstellation;
-  function openConstellation(){
-    data.discoveries ||= {};
-    openModal('Glimmermoth’s constellation',`<p class="muted">A tiny memory game hidden among the leaves. Follow the three lights in the order Glimmermoth shows you.</p><div class="constellation-display" id="constellation-display" role="status" aria-live="polite">Ready to watch the lights?</div><div class="puzzle-seeds" id="puzzle-seeds">${[['leaf','❧'],['star','✧'],['moon','☾'],['seed','◌']].map(([name,symbol])=>`<button type="button" data-seed="${name}" aria-label="${name}" disabled><span aria-hidden="true">${symbol}</span>${name}</button>`).join('')}</div><button class="primary" type="button" id="puzzle-start">Show the lights</button><p class="muted puzzle-progress" id="puzzle-progress">${data.discoveries.constellation?'You have already helped this grove bloom. Play again whenever you like.':'A small discovery is waiting.'}</p>`,()=>{},'A SECRET IN THE CANOPY');
-    document.getElementById('modal-save').hidden=true;
-    document.querySelector('#modal .modal-actions button[value="cancel"]').textContent='Close';
-    const display=document.getElementById('constellation-display'),start=document.getElementById('puzzle-start'),progress=document.getElementById('puzzle-progress'),buttons=[...document.querySelectorAll('[data-seed]')];
-    let order=[],step=0,generation=0;
-    function begin(){let current=++generation;order=['leaf','star','moon','seed'].sort(()=>Math.random()-.5).slice(0,3);step=0;buttons.forEach(b=>b.disabled=true);start.disabled=true;display.textContent=order.join(' · ');progress.textContent='Watch their order. The lights will hide in a moment.';
-      setTimeout(()=>{if(current!==generation||!display.isConnected)return;display.textContent='Which light came first?';progress.textContent='Choose 3 lights in order. You can show the pattern again at any time.';buttons.forEach(b=>b.disabled=false);start.disabled=false;start.textContent='Show the lights again'},3200);
-    }
-    start.onclick=begin;
-    buttons.forEach(button=>button.onclick=()=>{if(button.dataset.seed!==order[step]){step=0;display.textContent='The moth circles back. Try again.';progress.textContent='Nothing lost. Show the pattern again if you need it.';return}step++;display.textContent=`${step} of 3 lights found`;if(step===3){buttons.forEach(b=>b.disabled=true);data.discoveries.constellation=true;save();document.body.classList.add('grove-awakened');display.textContent='The grove remembers your light. ✧';progress.textContent='A little blossom has awakened beside your Mossling. This is the first trail; more paths will grow here.';toast('A quiet corner of the forest has bloomed. ✿')}});
-    document.getElementById('modal').addEventListener('close',()=>{generation++;document.querySelector('#modal .modal-actions button[value="cancel"]').textContent='Cancel'},{once:true});
-  }
+  document.getElementById('glimmermoth').onclick=()=>window.ForestGames?.open('glimmer');
 })();

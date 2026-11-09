@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="forest.css">
   <link rel="stylesheet" href="living-forest.css">
   <link rel="stylesheet" href="crystal-forest.css">
+  <link rel="stylesheet" href="forest-interactions.css?v=3">
   <script>try{document.documentElement.dataset.forest=localStorage.getItem('lumen-loam-appearance')||(matchMedia('(prefers-color-scheme:dark)').matches?'starfern':'day')}catch{}</script>
 </head>
 <body>
@@ -21,6 +22,7 @@
     <aside class="sidebar glass">
       <a class="brand" href="#home" aria-label="Lumen and Loam home"><span class="brand-mark">✺</span><span>LUMEN <i>&</i> LOAM<small>THE LIVING LEARNING LAB</small></span></a>
       <div class="forest-mode"><button id="forest-toggle" type="button" aria-label="Toggle StarFern night mode" aria-pressed="false"><svg class="mode-moon" viewBox="0 0 48 48" aria-hidden="true"><path d="M37 31A18 18 0 0 1 17 5a19 19 0 1 0 20 26Z"/><path class="moon-spark" d="m36 7 1.4 4.6L42 13l-4.6 1.4L36 19l-1.4-4.6L30 13l4.6-1.4Z"/></svg><span class="mode-caption"><strong>Night mode</strong><small>StarFern forest</small></span><span class="forest-switch" aria-hidden="true"></span></button><small id="forest-mode-label">Day canopy</small><button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="true">Forest motion: on</button></div>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-controls="nav" aria-expanded="true" aria-label="Compact navigation"><span aria-hidden="true">☰</span></button>
       <div class="side-label">YOUR SPACE</div>
       <nav id="nav" aria-label="Main navigation">
         <a href="#home" data-page="home">⌂ <span>Study home</span></a>
@@ -52,7 +54,9 @@
   </div>
   <dialog id="modal"><form method="dialog" class="modal-box" id="modal-form"><div class="modal-head"><div><div class="card-kicker" id="modal-kicker">YOUR SPACE</div><h2 id="modal-title"></h2></div><button class="icon-button" value="cancel" aria-label="Close">×</button></div><div id="modal-body"></div><div class="modal-actions"><button value="cancel" class="subtle-button">Cancel</button><button id="modal-save" value="save" class="primary">Save</button></div></form></dialog>
   <div id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js?v=2" defer></script>
-  <script src="living-forest.js?v=2" defer></script>
+  <script src="app.js?v=3" defer></script>
+  <script src="living-forest.js?v=3" defer></script>
+  <script src="navigation.js?v=3" defer></script>
+  <script src="forest-games.js?v=3" defer></script>
 </body>
 </html>
