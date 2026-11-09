@@ -18,3 +18,10 @@ Mossling: a single full-body transparent creature cutout, round ivory/oatmeal pl
 - `assets/hushhare.webp`: generated transparent ivory/lavender plush hare with pearlescent petal ears, fern details and star freckles. Guide to moonpetal matching.
 - `assets/dewfawn.webp`: generated transparent cream fawn with glass leaf antlers, dew, moss details and luminous freckles. Guide to lost-seed clue puzzles.
 Both are optimized WebP encodings of original generated PNGs; no third-party stock art.
+
+## StarFern creatures and illustrated Glimmermoth
+- `assets/glimmermoth.webp`: original generated day creature, fluffy ivory body, hazel eyes, feathery antennae, translucent leaf-petal wings, flowers, stars, and dew.
+- `assets/glimmermoth-starfern.webp`: matching dark-indigo form with luminous cyan/violet wing veins, eyes, stars, and dew.
+- `assets/mossling-starfern.webp`, `assets/hushhare-starfern.webp`, `assets/dewfawn-starfern.webp`: edits preserving the corresponding day creature's identity and pose while changing the coat, materials, and luminous details for the night forest.
+
+All five were made with the built-in image generator. They retain genuine alpha transparency and are resized/encoded as WebP for the site; the generated PNG originals are retained separately. Existing day art remains. `creature-art.js` swaps actual image sources with the forest theme. Hover glow is CSS; these files are not animated sprites.

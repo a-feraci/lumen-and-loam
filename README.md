@@ -50,3 +50,6 @@ Philosophy Foundations now has a published lesson at `#lesson/philosophy-01` wit
 - AI & Technology Ethics: `#lesson/ai-ethics-01` — Should we let the system decide?
 
 Both use shared lessons, independently sampled assessments, separate class notebooks, dated retakes, and resumable per-lesson drafts. Ethics adds a fictional Wayfinder case desk, a decision memo, and proposed future-lesson seeds. Field-note prompts in both lessons support format testing. Run `node tests/learning-core.test.cjs` for both banks and cross-course draft checks.
+
+## Open study desk
+The bottom study toolbar opens a nonblocking notebook, timer, sounds, and discovered paths. Keep notes open during a lesson, browse old notes, and return to unfinished page drafts. Notes can float or dock beside the lesson on a wide display. Games also use independent windows. New StarFern creature artwork follows night mode. See `docs/STUDY_DESK.md` for behavior, draft storage, and checks.

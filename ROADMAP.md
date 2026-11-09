@@ -63,3 +63,8 @@ The former public game directory is retired. Glimmermoth remains a discoverable 
 - Added clearly proposed next-lesson cards for privacy/consent, fairness, and companions/trust. Future polishing can proceed while Nova learns; these cards do not claim unpublished content is available.
 
 Next: collect real use observations from both classes, then choose one learning improvement and one visual/lore addition for the next small release. Teacher creatures, editable class packs, and the other previously planned features retain their existing status.
+
+## Modular desk release — November 9, 2026
+Shipped: independent notebook pages, draft persistence, saved-note browsing/search, floating/resizable/minimizable notebook and wide-screen docking; persistent tools toolbar; independent timer/sound windows using existing controls; nonmodal discovered-game windows and a Recess replay menu; a saved optional cross-page riddle letter; illustrated Glimmermoth and separate StarFern artwork for all four creatures. See `docs/STUDY_DESK.md`.
+
+Next creature animation idea: approve the new forms, then make small matching blink, wing-flex, paw, or antler-light frame sets. Preserve identity, transparent edges, reduced-motion support, and optional glow. Current artwork swaps and hover glows are shipped; pose-frame animation is not yet implemented.
