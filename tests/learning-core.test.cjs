@@ -1,7 +1,12 @@
 const assert=require('node:assert/strict');
 const vm=require('node:vm');const fs=require('node:fs');const core=require('../learning-core.js');
 const context={window:{}};vm.runInNewContext(fs.readFileSync(require.resolve('../lessons/philosophy-01.js'),'utf8'),context);
-const lesson=JSON.parse(JSON.stringify(context.window.LearningContent.lessons[0]));
+vm.runInNewContext(fs.readFileSync(require.resolve('../lessons/ai-ethics-01.js'),'utf8'),context);
+assert.equal(context.window.LearningContent.lessons.length,2);
+for(const entry of context.window.LearningContent.lessons){
+const lesson=JSON.parse(JSON.stringify(entry));
+for(const section of lesson.sections)for(const id of section.sourceIds)assert.ok(lesson.sources.some(s=>s.id===id),'Section sources must resolve');
+for(const objective of lesson.objectives)assert.ok(lesson.sections.some(s=>s.id===objective.id)||lesson.id==='philosophy-01','Every ethics objective has a teaching section');
 assert.deepEqual(core.validate(lesson),[]);assert.equal(lesson.questions.length,24);
 let state=918273;const random=()=>{state=(1664525*state+1013904223)>>>0;return state/4294967296};
 const positions=[0,0,0,0],orders=new Set(),seen=new Set();
@@ -22,4 +27,17 @@ assert.equal(pass.score,15,'Later answers must not mutate the first result.');as
 const copy=JSON.parse(JSON.stringify(draft));assert.deepEqual(copy.questions,draft.questions);assert.deepEqual(copy.answers,draft.answers);
 const retake=core.start(lesson,{id:'history-2',now:'2026-11-10T09:00:00Z',random});assert.notDeepEqual(retake.questions.map(q=>q.id),draft.questions.map(q=>q.id));assert.notEqual(retake.id,pass.id);
 const bad=JSON.parse(JSON.stringify(lesson));bad.questions[0].correctChoiceId='missing';assert.ok(core.validate(bad).length);
-console.log('Passed: 500 balanced 18-question assessments; distinct shuffles, four answer positions, grading thresholds, missing answers, immutable review snapshots, JSON draft restore, and retake IDs.');
+console.log(lesson.id+': passed 500 balanced assessments, shuffles, grading, missing answers, snapshots, restore, and retakes.');
+}
+const [philosophy,ethics]=context.window.LearningContent.lessons;
+const p=core.start(philosophy,{id:'philosophy-draft',now:'2026-11-09T19:00:00Z'});
+const e=core.start(ethics,{id:'ethics-draft',now:'2026-11-09T19:01:00Z'});
+p.answers[p.questions[0].id]=p.questions[0].correctChoiceId;
+e.answers[e.questions[0].id]=e.questions[0].choices[1].id;
+const backup=JSON.parse(JSON.stringify({quizDrafts:{[p.lessonId]:p,[e.lessonId]:e},quizAttempts:[]}));
+assert.equal(backup.quizDrafts['philosophy-01'].classId,'philosophy');
+assert.equal(backup.quizDrafts['ai-ethics-01'].classId,'ai-ethics');
+assert.equal(Object.keys(backup.quizDrafts).length,2);
+assert.ok(!p.questions.some(q=>e.questions.some(r=>r.id===q.id)));
+assert.equal(backup.quizDrafts[p.lessonId].answers[p.questions[0].id],p.answers[p.questions[0].id]);
+console.log('Passed: separate course drafts and answers survive one backup; question IDs do not collide.');

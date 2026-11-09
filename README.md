@@ -26,7 +26,7 @@ In this repository, open **Settings → Pages**. Choose **Deploy from a branch**
 
 ## Content and data
 
-The class pages begin with orientation prompts. They are shells for lessons still to be developed. Tasks, notes, timer state, and discoveries live in localStorage. No server, account system, telemetry, or automatic cloud sync is included. Export before clearing browser data. Never commit personal study exports into this public repository.
+Philosophy Foundations and AI & Technology Ethics each have a published first lesson and assessment. Other class pages begin with orientation prompts for future lessons. Tasks, notes, timer state, and discoveries live in localStorage. No server, account system, telemetry, or automatic cloud sync is included. Export before clearing browser data. Never commit personal study exports into this public repository.
 
 The original private study edition is maintained separately. The public starter contains no personal notes or task history.
 
@@ -44,3 +44,9 @@ See `LEARNING_PACK_SPEC.md` for the draft quiz, flashcard, class-import and crea
 Philosophy Foundations now has a published lesson at `#lesson/philosophy-01` with a balanced 18-question assessment from a 24-question bank. Responses and unfinished drafts save locally; every submitted attempt and retake keeps its own dated notebook entry and review snapshot. Assessment results also appear in the calendar and JSON backup. See `docs/TEACHER_CHATS.md` for starter prompts and publication steps, and `docs/PHILOSOPHY_FOUNDATIONS.md` for the course outline. Run the assessment checks with `node tests/learning-core.test.cjs`.
 
 `templates/lesson-template.json` is a future authoring handoff. File upload/import for lessons, flashcards, and teacher hiring are still planned. The former visible game hub has become a sequence of subtle creature sightings, with prior discoveries preserved.
+
+## Two-class pilot
+- Philosophy: `#lesson/philosophy-01` — What makes a good reason?
+- AI & Technology Ethics: `#lesson/ai-ethics-01` — Should we let the system decide?
+
+Both use shared lessons, independently sampled assessments, separate class notebooks, dated retakes, and resumable per-lesson drafts. Ethics adds a fictional Wayfinder case desk, a decision memo, and proposed future-lesson seeds. Field-note prompts in both lessons support format testing. Run `node tests/learning-core.test.cjs` for both banks and cross-course draft checks.
