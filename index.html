@@ -9,25 +9,28 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="forest.css">
   <link rel="stylesheet" href="living-forest.css">
-  <script>try{document.documentElement.dataset.forest=localStorage.getItem('lumen-loam-appearance')==='starfern'?'starfern':'day'}catch{}</script>
+  <link rel="stylesheet" href="crystal-forest.css">
+  <script>try{document.documentElement.dataset.forest=localStorage.getItem('lumen-loam-appearance')||(matchMedia('(prefers-color-scheme:dark)').matches?'starfern':'day')}catch{}</script>
 </head>
 <body>
+  <div class="forest-landscape" aria-hidden="true"><img class="landscape-day" src="assets/day-canopy.webp" alt=""><img class="landscape-night" src="assets/starfern-forest.webp" alt=""><div class="landscape-light"></div></div>
+  <svg class="glass-filter-defs" aria-hidden="true"><defs><filter id="glass-refraction" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.008 0.014" numOctaves="1" seed="6" result="glass-noise"/><feDisplacementMap in="SourceGraphic" in2="glass-noise" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter></defs></svg>
   <div class="ambient-glow" aria-hidden="true"></div>
   <div class="forest-sky" aria-hidden="true"><span class="starlight s1"></span><span class="starlight s2"></span><span class="starlight s3"></span><span class="starlight s4"></span><span class="starlight s5"></span><span class="hanging-vine v1">❧<br>❧<br>❧</span><span class="hanging-vine v2">❧<br>❧</span><span class="glow-shrooms"></span><span class="forest-eyes"></span></div>
   <div class="app-shell">
     <aside class="sidebar glass">
       <a class="brand" href="#home" aria-label="Lumen and Loam home"><span class="brand-mark">✺</span><span>LUMEN <i>&</i> LOAM<small>THE LIVING LEARNING LAB</small></span></a>
+      <div class="forest-mode"><button id="forest-toggle" type="button" aria-label="Toggle StarFern night mode" aria-pressed="false"><svg class="mode-moon" viewBox="0 0 48 48" aria-hidden="true"><path d="M37 31A18 18 0 0 1 17 5a19 19 0 1 0 20 26Z"/><path class="moon-spark" d="m36 7 1.4 4.6L42 13l-4.6 1.4L36 19l-1.4-4.6L30 13l4.6-1.4Z"/></svg><span class="mode-caption"><strong>Night mode</strong><small>StarFern forest</small></span><span class="forest-switch" aria-hidden="true"></span></button><small id="forest-mode-label">Day canopy</small><button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="true">Forest motion: on</button></div>
       <div class="side-label">YOUR SPACE</div>
       <nav id="nav" aria-label="Main navigation">
         <a href="#home" data-page="home">⌂ <span>Study home</span></a>
+        <a href="#fieldguide" data-page="fieldguide">❧ <span>Field Guide</span></a>
         <a href="#courses" data-page="courses">◈ <span>Canopy Lab</span></a>
         <a href="#tasks" data-page="tasks">☑ <span>Task garden</span></a>
         <a href="#notebooks" data-page="notebooks">▤ <span>Notebooks</span></a>
         <a href="#calendar" data-page="calendar">▦ <span>Calendar</span></a>
         <a href="#completed" data-page="completed">✧ <span>Completed</span></a>
-        <a href="#fieldguide" data-page="fieldguide">❧ <span>Field Guide</span></a>
       </nav>
-      <div class="forest-mode"><button id="forest-toggle" type="button" aria-pressed="false"><span>☾ StarFern</span><span class="forest-switch" aria-hidden="true"></span></button><small id="forest-mode-label">Day canopy</small><button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="true">Forest motion: on</button></div>
       <div class="side-bottom"><div class="plant-art" aria-hidden="true">𖥧 𖤣 𖥧</div><p>Stay curious.<br>Grow at your own pace.</p><button class="text-button" id="open-settings">⚙ Settings & data</button></div>
     </aside>
     <main id="main" tabindex="-1"></main>
@@ -43,13 +46,13 @@
         <button class="text-button" id="quick-task">+ Add a task</button>
       </section>
       <section class="rail-card glass"><div class="rail-head"><h3>Today’s sprouts</h3><a href="#tasks">See all ↗</a></div><div id="rail-tasks"></div><button class="subtle-button" id="rail-task-add">+ New task</button></section>
-      <section class="rail-card glass mossling-card"><div class="rail-head"><h3>Mossling’s grove</h3><span aria-hidden="true">❧</span></div><div class="grove-scene"><button type="button" id="mossling-greet" class="mossling" aria-label="Say hello to the Mossling"><span class="moss-ear ear-left"></span><span class="moss-ear ear-right"></span><span class="moss-face"><i></i><i></i><b>ᴗ</b></span></button><div id="grove-leaves" aria-hidden="true"></div></div><p id="grove-caption">Finish a task to plant a little leaf.</p></section>
+      <section class="rail-card glass mossling-card"><div class="rail-head"><h3>Mossling’s grove</h3><span aria-hidden="true">❧</span></div><div class="grove-scene"><button type="button" id="mossling-greet" class="mossling illustrated" aria-label="Say hello to the Mossling"><img src="assets/mossling.webp" alt="" width="130" height="140"><span class="moss-ear ear-left"></span><span class="moss-ear ear-right"></span><span class="moss-face"><i></i><i></i><b>ᴗ</b></span></button><div id="grove-leaves" aria-hidden="true"></div></div><p id="grove-caption">Finish a task to plant a little leaf.</p></section>
       <section class="rail-card glass sound-card"><div class="rail-head"><h3>Soundscape</h3><span>♪</span></div><label for="sound-select" class="sr-only">Choose soundscape</label><select id="sound-select"><option value="off">Quiet room</option><option value="lofi">Lo-fi glow</option><option value="rain">Window rain</option><option value="storm">Distant storm</option><option value="forest">Morning forest</option><option value="keyboard">Soft keyboard</option></select><div class="sound-row"><button id="sound-toggle" class="subtle-button">Play sound</button><input id="sound-volume" type="range" min="0" max="100" value="38" aria-label="Sound volume"></div><small>Generated in your browser; sound starts when you press play.</small></section>
     </aside>
   </div>
   <dialog id="modal"><form method="dialog" class="modal-box" id="modal-form"><div class="modal-head"><div><div class="card-kicker" id="modal-kicker">YOUR SPACE</div><h2 id="modal-title"></h2></div><button class="icon-button" value="cancel" aria-label="Close">×</button></div><div id="modal-body"></div><div class="modal-actions"><button value="cancel" class="subtle-button">Cancel</button><button id="modal-save" value="save" class="primary">Save</button></div></form></dialog>
   <div id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js" defer></script>
-  <script src="living-forest.js" defer></script>
+  <script src="app.js?v=2" defer></script>
+  <script src="living-forest.js?v=2" defer></script>
 </body>
 </html>

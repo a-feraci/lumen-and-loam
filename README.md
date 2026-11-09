@@ -31,3 +31,7 @@ The original private study edition is maintained separately. The public starter 
 ## Next
 
 See `ROADMAP.md` for the creature system, lesson publishing, and forest discovery plans.
+
+## Clear-glass visual release
+
+The forest now uses matching generated day/night scenery, a transparent Mossling illustration, unblurred reflective glass surfaces, a top-positioned moon toggle, and a higher Field Guide link. The Field Guide now covers the purpose, subjects, core workflows, backups, and the current one-game discovery system. See `ASSETS.md` for the image briefs.

@@ -33,7 +33,7 @@
   reduced.addEventListener('change',e=>{if(!explicitMotion){motion=!e.matches;applyMotion()}});
   applyMotion();
   let frame=null,pointerX=0,pointerY=0;
-  document.addEventListener('pointermove',e=>{if(!motion||e.pointerType==='touch')return;pointerX=(e.clientX/innerWidth-.5)*2;pointerY=(e.clientY/innerHeight-.5)*2;if(frame===null)frame=requestAnimationFrame(()=>{document.body.style.setProperty('--forest-x',pointerX.toFixed(3));document.body.style.setProperty('--forest-y',pointerY.toFixed(3));frame=null})},{passive:true});
+  document.addEventListener('pointermove',e=>{if(!motion||e.pointerType==='touch')return;pointerX=(e.clientX/innerWidth-.5)*2;pointerY=(e.clientY/innerHeight-.5)*2;if(frame===null)frame=requestAnimationFrame(()=>{const panel=e.target.closest('.card,.glass,.hero');if(panel){const box=panel.getBoundingClientRect();panel.style.setProperty('--shine-x',((e.clientX-box.left)/box.width*100).toFixed(1)+'%');panel.style.setProperty('--shine-y',((e.clientY-box.top)/box.height*100).toFixed(1)+'%')}document.body.style.setProperty('--forest-x',pointerX.toFixed(3));document.body.style.setProperty('--forest-y',pointerY.toFixed(3));frame=null})},{passive:true});
   document.addEventListener('visibilitychange',()=>document.body.classList.toggle('forest-away',document.hidden));
   data.discoveries ||= {};
   document.body.classList.toggle('grove-awakened',!!data.discoveries.constellation);
