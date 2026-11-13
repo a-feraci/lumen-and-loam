@@ -39,9 +39,9 @@
   const next = [...store()[key]];
   for (const [term,definition] of l.terms) {
    if (!next.some(item => item.group === destination && norm(item.term) === norm(term))) {
-    const section = l.sections.find(s => s.paragraphs.some(p => p.includes('[[' + term + ']]')) ||
+    const section = l.sections.find(s => s.paragraphs.some(p => p.toLowerCase().includes('[[' + term.toLowerCase() + ']]')) ||
      (s.table?.rows.some(row => row[0] === term)));
-    next.push({id:uid(),group:destination,term,definition,aliases:'',example:l.cardExamples?.[term] || '',visual:section?.map?.steps.map(step => Array.isArray(step) ? step.join(' + ') : step).join(' → ') || ''});
+    next.push({id:uid(),group:destination,term,definition,aliases:l.cardAliases?.[term] || '',example:l.cardExamples?.[term] || '',visual:l.cardVisuals?.[term] || section?.map?.steps.map(step => Array.isArray(step) ? step.join(' + ') : step).join(' → ') || ''});
    }
   }
   if (write(key,next)) {
@@ -112,12 +112,12 @@
   if (!buckets.some(g => g.id === group)) group = buckets[0].id;
   const cards = items();
   const entry = cards.find(item => item.id === editing);
-  const l = LearningContent.lessons.find(l => group === 'class:'+l.classId);
+  const lessons = LearningContent.lessons.filter(l => group === 'class:'+l.classId);
   return header('YOUR STUDY TOOLS','Study cards','Build decks and glossaries for a class or a heading you name.') +
    '<section class="card study-card-room"><div class="toolbar"><button class="outline-button" data-card-tab="cards" aria-pressed="' + (tab==='cards') + '">Flashcards</button><button class="outline-button" data-card-tab="glossary" aria-pressed="' + (tab==='glossary') + '">Glossary</button></div>' +
    '<label for="study-card-group">Class or heading</label><select id="study-card-group">' + buckets.map(g => '<option value="' + esc(g.id) + '"' + (group===g.id?' selected':'') + '>' + esc(g.name) + '</option>').join('') + '</select>' +
    '<details class="add-card-group"><summary>Create a custom heading</summary><form data-card-group><label>Heading name <input name="name" maxlength="60" required></label><button class="outline-button" type="submit">Create heading</button></form></details>' +
-   '<div class="toolbar">' + (l ? '<button class="outline-button" data-import-terms="' + esc(l.id) + '" data-import-kind="' + tab + '">Save lesson vocabulary</button>' : '') +
+   '<div class="toolbar">' + lessons.map(l => '<button class="outline-button" data-import-terms="' + esc(l.id) + '" data-import-kind="' + tab + '">Save ' + (lessons.length > 1 ? 'Lesson ' + l.number + ' ' : 'lesson ') + 'vocabulary</button>').join('') +
    (tab==='cards' && cards.length ? '<button class="primary" data-practice-mode="choice">Multiple choice</button><button class="outline-button" data-practice-mode="typed">Type an answer</button>' : '') + '</div>' +
    '<section id="card-practice" tabindex="-1" aria-label="Flashcard practice"' + (session?'':' hidden') + '>' + practice() + '</section>' +
    '<details class="card-editor"' + (entry?' open':'') + '><summary>' + (entry?'Edit '+esc(entry.term):tab==='cards'?'Add a flashcard':'Add a glossary term') + '</summary><form data-card-editor>' +

@@ -97,3 +97,12 @@ html:is([data-forest=hollow],[data-forest=circuit]) :is(.mode-moon,.mode-moon .m
 html:is([data-forest=hollow],[data-forest=circuit]) .desk-launcher button {color:var(--ink)}
 html:is([data-forest=hollow],[data-forest=circuit]) .phase-tabs button.active {background:var(--world-button);color:#10161c}
 html[data-forest=hollow] :is(.plant-art,.brand-mark,.grove-scene,.forest-switch,.motion-toggle) {filter:grayscale(1)}
+
+.support-example {margin-block:1rem}
+.support-example h4 {margin:.5rem 0}
+.support-reasons {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem}
+.support-reasons > div,.support-conclusion {background:#9ab09025;border:1px solid var(--line);border-radius:9px;padding:.7rem;text-align:center}
+.support-reasons span,.support-arrow {display:block;text-align:center;font-weight:bold}
+.support-conclusion {margin-top:.55rem}
+.lesson-prompts details {margin-top:1rem}
+@media (max-width:440px) {.support-reasons {font-size:.9em}}

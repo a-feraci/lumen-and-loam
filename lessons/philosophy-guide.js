@@ -26,8 +26,8 @@
   Validity:'a feature of deductive arguments whose premises cannot all be true while the conclusion is false',
   Soundness:'deductive validity together with the actual truth of every premise',
   'Inductive reasoning':'reasoning that supports a conclusion without guaranteeing it',
-  Counterexample:'a case that exposes a problem with a general claim, definition, or inference',
-  'Charitable objection':'a reasoned challenge to a fair version of someone’s position',
+  Counterexample:'a case that shows a general claim has an exception',
+  'Fair objection':'a reasoned challenge to a fair version of someone’s position',
   'Thought experiment':'an imagined case used to test an idea or principle',
   'Empirical question':'a question we can investigate through observation or experience',
   'Normative question':'a question about what should be done, valued, or permitted',
@@ -40,8 +40,10 @@
    id:'begin',title:'1 · What is philosophy?',sourceIds:['origins','methods'],
    paragraphs:[
     '[[Philosophy]] is the careful study of fundamental questions about reality, knowledge, reasoning, and how we should live. A fundamental question asks about ideas we often take for granted. For example, before deciding whether a school is fair, we can ask what “fair” means.',
+    'You can start with everyday experience giving someone a reason. No prior philosophy study is needed.',
     'Imagine a study app that predicts the lessons you’ll enjoy. Should it choose what you learn? You could measure what students enjoy and how much they remember. You would still need to ask whether the school should let an app make that choice. Philosophy helps you examine the concepts, reasons, and values behind a decision.',
-    '[[Clarification]] means making the meaning or scope of a question more precise. “Is this a good app?” could mean “Does it help students remember?” or “Is it fair to require it?” A clearer question tells us what to look for. Philosophers across many traditions use methods such as dialogue, argument, and reflection to explore questions like these.'
+    '[[Clarification]] means making the meaning or scope of a question more precise. “Is this a good app?” could mean “Does it help students remember?” or “Is it fair to require it?” A clearer question tells us what to look for. Philosophers across many traditions use methods such as dialogue, argument, and reflection to explore questions like these.',
+    'Two learners might still disagree after realizing one means equal rules by “fair” and the other means equal access. Now they can ask which kind of fairness matters in this case.'
    ],
    tip:'When you hear “good,” “fair,” or “true,” ask what the word means in this particular situation.',
    map:{label:'From a broad question to a testable one',steps:['“Is this app good?”','Pick one meaning: good for remembering','“Do beginners recall more after a week using it?”']},
@@ -65,7 +67,8 @@
    id:'arguments',title:'3 · Build an argument from reasons',sourceIds:['arguments'],
    paragraphs:[
     'A [[Claim]] is a statement that can be true or false. “This library promised confidentiality” is a claim. An [[Argument]] is a group of reasons offered in support of a claim.',
-    'A [[Premise]] is a reason offered in support of a conclusion. A [[Conclusion]] is the claim the reasons are meant to support. The [[Inference]] is the step from those reasons to the conclusion. Think of a bridge: the premises are the starting side, the conclusion is the destination, and the inference is the route between them.',
+    'A [[Premise]] is a reason offered in support of a conclusion. A [[Conclusion]] is the claim the reasons are meant to support. The [[Inference]] is the step from those reasons to the conclusion. Think of a bridge: the premises are the starting side, the conclusion is the destination, and the inference is the route between them. A bridge gets you to the other side if it holds. A reason can give some support even when it leaves room for doubt.',
+    'In “Protect these notes because you promised,” the promise supports a recommendation. In “The notes got wet because it rained,” the rain explains an event we already take as given.',
     'An [[Assumption]] is an idea an argument takes for granted. “The app improves test scores, so everybody should use it” assumes that improving scores is enough to justify requiring the app. You can ask about accessibility, privacy, and whether students could get the same benefit from a choice of tools.'
    ],
    map:{label:'A worked argument about privacy',steps:[['Premise 1: This library promised confidentiality.','Premise 2: The library should keep its promise by protecting borrowing records.'],'Conclusion: This library should protect its borrowing records.']},
@@ -77,17 +80,18 @@
    paragraphs:[
     '[[Deductive reasoning]] aims to guarantee a conclusion if the premises are true. [[Validity]] means the premises cannot all be true while the conclusion is false. [[Soundness]] means the argument is valid and all its premises are actually true.',
     'Imagine two fictional premises: all Mosslings can teleport, and Pip is a Mossling. “Pip can teleport” follows if you grant both premises. The argument is valid. To call it sound, you would also need to establish that its premises are true.',
+    'All birds are penguins. A robin is a bird. Therefore, a robin is a penguin. The conclusion follows if both premises are true, so the argument is valid. The first premise is false, so the argument is unsound.',
     '[[Inductive reasoning]] supports a conclusion without guaranteeing it. If a varied group of learners did better using a technique, that gives you some reason to expect similar learners to benefit. One enthusiastic volunteer gives much weaker support for a claim about everybody.'
    ],
    table:{head:['Check','Question to ask'],rows:[['Validity','Could the premises be true and the conclusion still be false?'],['Soundness','Is it valid, and are all the premises actually true?'],['Inductive support','How strongly does the evidence support the prediction, and for whom?']]},
-   example:'A lamp glows whenever it has power. You see it glowing. Does power have to be the cause? It could be reflecting moonlight. That possibility shows the inference fails to guarantee its conclusion.',
+   example:'If the heater is on, the room gets warm. The room is warm, so the heater must be on. A room warmed by direct sun with the heater off is a case where the premises are true and the conclusion is false.',
    prompts:['Why does the teleporting Mossling argument count as valid even if you doubt a premise?','What would make the evidence for a new study technique stronger than one person’s experience?']
   },
   {
    id:'objections',title:'5 · Test an idea fairly',sourceIds:['methods'],
    paragraphs:[
-    'A [[Counterexample]] is a case that exposes a problem with a general claim. One useful but frustrating practice session challenges “Every useful learning activity is enjoyable.” You could revise the claim to “Enjoyment can help people keep practicing.”',
-    'A [[Charitable objection]] is a reasoned challenge to a fair version of someone’s position. First restate the idea in a way its supporter would recognize. Then identify a premise, assumption, or consequence that deserves scrutiny.',
+    'A [[Counterexample]] is a case that shows a general claim has an exception. A useful but frustrating session shows useful study can happen without enjoyment. Whether enjoyment helps people keep practicing is a separate question.',
+    'A [[Fair objection]] is a reasoned challenge to a fair version of someone’s position. First restate the idea in a way its supporter would recognize. Then identify a premise, assumption, or consequence that deserves scrutiny. “Some AI help improves learning” leaves room to ask “Which kinds help?” “You want machines to do all the thinking” changes the claim before challenging it.',
     'A [[Thought experiment]] is an imagined case used to test an idea. Suppose an app helps everyone but requires collecting their private notes. Would you still make it mandatory? Your answer can reveal which values matter to you. A study of real students would be needed to find out whether the app actually helps everyone.'
    ],
    tip:'Before disagreeing, try “Here’s what I think you’re saying. Did I get it right?”',
@@ -98,16 +102,17 @@
    paragraphs:[
     'A fictional school is considering requiring an AI study assistant. One student wants everyone to benefit from extra support. Another wants learners to control their notes and choose how they study. Your task is to give your own provisional recommendation.',
     'An [[Empirical question]] can be investigated through observation or experience. “Did students remember more after using the assistant for four weeks?” is empirical. A [[Normative question]] asks what should be done, valued, or permitted. “Should use of the assistant be mandatory?” is normative.',
-    'A [[Value assumption]] is a principle about what matters that connects facts to a recommendation. A [[Reply]] explains how an objection affects your reasoning or changes your proposal. [[Evidence that could change your mind]] is a specific finding that would lead you to revise your position. Say what you would need to learn and what you would do differently if you learned it.'
+    'A [[Value assumption]] is a principle about what matters that connects facts to a recommendation. A [[Reply]] explains how an objection affects your reasoning or changes your proposal. [[Evidence that could change your mind]] is a specific finding that would lead you to revise your position. Say what you would need to learn and what you would do differently if you learned it.',
+    'A student reports that they cannot reliably connect to the internet at home. This reveals a barrier for that student. Ask who else is affected and whether an offline option would help.'
    ],
    table:{head:['Piece of the reflection','Worked example'],rows:[
     ['Conclusion','Offer the assistant to all students as an optional tool.'],
-    ['Premise 1','The school wants every student to be able to get extra study support.'],
-    ['Premise 2','A required tool limits students’ choice even when another study method suits them.'],
-    ['Value assumption','When students can get comparable support by choice, their autonomy should carry weight.'],
-    ['Fair objection','Some students who could benefit may never try an optional tool.'],
-    ['Reply','Give everyone a guided demonstration and let them decide afterward.'],
-    ['Evidence that could change my mind','If a four-week comparison found a large learning benefit for beginners that optional use could not match, with equivalent privacy protections, I would consider a limited required trial.']
+    ['Premise 1','Suppose the school can offer comparable study support through the assistant or staffed study sessions.'],
+    ['Premise 2','Requiring everyone to use the assistant would take away the option to rely on the staffed sessions alone.'],
+    ['Value assumption','When comparable support is available, the school should preserve students’ choice of how to study.'],
+    ['Fair objection','Some students who would benefit may never try the assistant, even if they can access it.'],
+    ['Reply','Give everyone a guided demonstration, then let them choose. Check whether students who need support are getting it.'],
+    ['Evidence that could change my mind','If a four-week comparison found beginners who had to use the assistant recalled substantially more a week later than beginners who got a demo and could choose, with comparable privacy and access, I’d consider a short required trial for beginners.']
    ]},
    tip:'The case is fictional. Label any factual assumption as tentative. You can say what research would test it.',
    exercise:'Write 150–250 words using the seven pieces in the worked example. You can support a requirement, recommend optional use, or defend a different policy. Start with the numbered questions below, then turn your answers into a short reflection.',
@@ -119,12 +124,38 @@
    ]
   }
  ];
- lesson.revision = 2;
+ lesson.revision = 3;
+ lesson.bankRevision = 2;
+ lesson.reviewedAt = '2026-11-12';
+ lesson.objectives.find(o => o.id === 'inquiry').text = 'Clarify an ambiguous question and identify what a discussion helped clarify.';
+ lesson.objectives.find(o => o.id === 'objections').text = 'Identify fair objections and select a revision supported by a counterexample.';
+ lesson.cardAliases = {'Fair objection':'charitable objection|a reasoned challenge to a fair version of someone’s position'};
+ const bankEdits = {
+  i4:{prompt:'Which rewrite makes “Is technology good?” easiest to investigate?', options:['Does this study app help beginners remember vocabulary a week later?','Is this study app good?','Is this study app better for all learners?','Do learners call this study app good?'],explanation:'The question names the tool, the learners, what to measure, and when to measure it.'},
+  b1:{prompt:'Which question about a trail closure concerns what justifies belief?',options:['What would justify trusting my neighbor’s report that the trail is closed?','Who has authority to close the trail?','What do hikers owe one another when a trail closes?','How should we interpret a painting of the closed trail?'],explanation:'This asks what makes the report credible. It concerns knowledge and what justifies belief.'},
+  a1:{prompt:'“Please return the key today because you promised to bring it back before closing.” Which claim is the conclusion?',options:['You should return the key today.','You promised to bring the key back before closing.','The building will close today.','You have a key.'],explanation:'The promise is the reason offered for the recommendation to return the key today.'},
+  a2:{prompt:'“The tool saves time, so the school should require every student to use it.” Which assumption connects the reason to the recommendation?',options:['Saving time is enough to justify requiring the tool.','The tool saves time.','Every student has used the tool.','A recommendation was made.'],explanation:'Saving time is the stated reason. The assumption says why that benefit would justify a requirement.'},
+  d3:{options:['Inductive reasoning.','Deductive certainty.','A proof that no counterevidence can matter.','An argument that is invalid solely because it is probabilistic.']},
+  d4:{prompt:'“If the heater is on, the room gets warm. The room is warm, so the heater must be on.” What shows that the conclusion could be false?',options:['Sunlight could warm the room with the heater off.','A warm room confirms that the heater is on.','The reasoning works whenever the room really is warm.','We only need to know whether the heater works.'],explanation:'Sunlight could warm the room while the heater is off. Both premises can be true while the conclusion is false.'},
+  o2:{prompt:'A person claims “Some AI assistance helps learning.” Which reply changes the speaker’s claim before challenging it?'},
+  o3:{prompt:'What can an imagined case about requiring a study app help us learn?',options:['It can show which values might conflict. A real study could tell us how often students face that conflict.','It can determine how often an event actually occurs in a population.','It can replace all observation about a tool’s effects.','It can guarantee everyone will share the same intuition.'],explanation:'The imagined case helps us examine how values might conflict. Observations help us estimate how often that happens.'},
+  p1:{prompt:'The school says the tool is popular, so it should require everyone to use it. What value assumption would the school need to defend?',options:['Popularity is a strong enough reason to require everyone to use the tool.','Students differ in how much they like the tool.','A survey accurately measured its popularity.','Most students already use the tool.'],explanation:'The argument takes for granted that being popular is enough to justify making the tool mandatory.'},
+  p3:{prompt:'A student reports unreliable home internet, which makes it hard to use a required study tool. What should the school do?'},
+  p4:{prompt:'Which response explains a position and says what could change it?',explanation:'The first response gives reasons, considers a challenge, and names what would lead to a revision.'}
+ };
+ for (const q of lesson.questions) {
+  const edit = bankEdits[q.id];
+  if (!edit) continue;
+  if (edit.prompt) q.prompt = edit.prompt;
+  if (edit.explanation) q.explanation = edit.explanation;
+  if (edit.options) q.choices.forEach(choice => { choice.text = edit.options[Number(choice.id.slice(7))]; });
+ }
  lesson.unit = 1;
  lesson.number = 1;
  lesson.subtitle = 'Philosophy Foundations · Unit 1 · Lesson 1';
  lesson.sections = content;
  lesson.terms = Object.entries(definitions);
+ lesson.reflectionBody = 'Should the fictional school require an AI study assistant? Write 150–250 words.\n\nMy recommendation\n\nPremise 1\n\nPremise 2\n\nValue assumption\n\nFair objection\n\nReply\n\nEvidence that could change my mind\n';
  lesson.reflectionPrompt = '1. My recommendation\n2. Premise 1 and premise 2\n3. Value assumption\n4. Fair objection\n5. Reply\n6. Evidence that could change my mind';
  lesson.sourceNote = 'The teaching text and fictional examples are original. OpenStax supports the philosophy concepts. The IES practice guide informed the use of worked examples, retrieval questions, and visuals with explanations.';
  lesson.sources.push({id:'practice',title:'IES · Organizing Instruction and Study to Improve Student Learning',url:'https://ies.ed.gov/ncee/wwc/PracticeGuide/1'});
@@ -149,11 +180,10 @@
   const marker = text.match(/^\[\[([^\]]+)\]\]/);
   if (!marker) return esc(text);
   const key = marker[1];
-  const definition = definitions[key];
   // Match the author’s sentence before highlighting its definition.
   const rest = text.slice(marker[0].length);
-  const line = rest.match(/^ (is|means|aims to|supports|can be|asks|explains) ([^.]+)(\.|$)/);
-  if (!line || !definition) return term(key) + esc(rest.replace(/\[\[|\]\]/g,''));
+  const line = rest.match(/^ (is|are|means|aims to|supports|can be|asks|explains) ([^.]+)(\.|$)/);
+  if (!line) return term(key) + esc(rest.replace(/\[\[|\]\]/g,''));
   return term(key) + ' ' + esc(line[1]) + ' <mark class="lesson-definition">' + esc(line[2]) + '</mark>' + esc(rest.slice(line[0].length - line[3].length).replace(/\[\[([^\]]+)\]\]/g,'$1'));
  }
  function inline(text) {
@@ -165,32 +195,42 @@
    table.rows.map(([label,...cells]) => '<tr><th scope="row">' + (section === 'branches' ? term(label) : esc(label)) + '</th>' +
     cells.map((cell,i) => '<td>' + (section === 'branches' && i === 0 ? '<mark class="lesson-definition">' + esc(cell) + '</mark>' : esc(cell)) + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>';
  }
- function sectionBody(section) {
+ function sectionBody(section, currentLesson) {
   const map = section.map ? '<figure class="argument-map"><figcaption>' + esc(section.map.label) + '</figcaption><ol>' + section.map.steps.map(step => '<li>' + (Array.isArray(step) ? step.map(reason => '<div>' + esc(reason) + '</div>').join('') : esc(step)) + '</li>').join('') + '</ol></figure>' : '';
   const prompts = '<div class="lesson-prompts"><h3>Questions to answer</h3><ol>' + section.prompts.map((prompt,i) =>
-   '<li><span>' + esc(prompt) + '</span> <button type="button" class="text-button" data-philosophy-prompt="' + section.id + '/' + i + '">Add to notebook</button></li>').join('') + '</ol></div>';
+   '<li><span>' + esc(prompt) + '</span> <button type="button" class="text-button" data-philosophy-prompt="' + currentLesson.id + '/' + section.id + '/' + i + '">Add to notebook</button></li>').join('') + '</ol></div>';
+  const supportMap = section.supportMap ? '<figure class="argument-map"><figcaption>' + esc(section.supportMap.label) + '</figcaption>' +
+   section.supportMap.examples.map(example => '<div class="support-example"><h4>' + esc(example.label) + '</h4><div class="support-reasons">' +
+    example.reasons.map(reason => '<div>' + esc(reason) + (example.linked ? '' : '<span aria-hidden="true">↓</span>') + '</div>').join('') + '</div>' +
+    (example.linked ? '<p class="support-arrow" aria-hidden="true">↓</p>' : '') + '<div class="support-conclusion">' + esc(example.conclusion) + '</div></div>').join('') + '</figure>' : '';
   return '<div data-narration>' + section.paragraphs.map(p => '<p>' + inline(p) + '</p>').join('') +
-   tableMarkup(section.table,section.id) + map +
+   tableMarkup(section.table,section.id) + map + supportMap +
    (section.example ? '<div class="lesson-example">' + esc(section.example) + '</div>' : '') +
    (section.tip ? '<p class="lesson-tip"><strong>★ Study tip</strong> ' + esc(section.tip) + '</p>' : '') +
-   (section.exercise ? '<p class="lesson-example">' + esc(section.exercise) + '</p>' : '') + '</div>' + prompts;
+   (section.exercise ? '<p class="lesson-example">' + esc(section.exercise) + '</p>' : '') +
+   (section.mapDescription ? '<p class="mini">' + esc(section.mapDescription) + '</p>' : '') + '</div>' + prompts +
+   (section.practice ? '<div class="lesson-prompts"><h3>Independent practice</h3><p>' + esc(section.practice) + '</p><button type="button" class="outline-button" data-philosophy-prompt="' + currentLesson.id + '/' + section.id + '/practice">Add practice to notebook</button><details><summary>Check your reasoning</summary><ul>' + section.practiceFeedback.map(item => '<li>' + esc(item) + '</li>').join('') + '</ul></details></div>' : '');
  }
  function outline() {
   return '<section class="card curriculum"><h2>Course outline</h2><p>A class contains units, each unit contains lessons, and each lesson contains short sections.</p><ol>' +
    units.map(([name,lessons],i) => '<li><h3>Unit ' + (i+1) + ' · ' + esc(name) + '</h3><ol>' +
-    lessons.map((title,j) => '<li>' + (i===0&&j===0 ? '<a href="#lesson/philosophy-01">' + esc(title) + '</a> <small>Available</small>' : esc(title) + ' <small>Planned</small>') + '</li>').join('') + '</ol></li>').join('') + '</ol></section>';
+    lessons.map((title,j) => {
+     const item = LearningContent.lessons.find(l => l.classId === 'philosophy' && l.unit === i+1 && l.number === j+1);
+     return '<li>' + (item ? '<a href="#lesson/' + item.id + '">' + esc(title) + '</a> <small>' + (item.draft ? 'Draft' : 'Available') + '</small>' : esc(title) + ' <small>Planned</small>') + '</li>';
+    }).join('') + '</ol></li>').join('') + '</ol></section>';
  }
  document.addEventListener('click',event => {
   const button = event.target.closest('[data-philosophy-prompt]');
   if (!button) return;
-  const [id,index] = button.dataset.philosophyPrompt.split('/');
-  const section = content.find(item => item.id === id);
-  const prompt = section?.prompts[index];
+  const [lessonId,id,index] = button.dataset.philosophyPrompt.split('/');
+  const current = LearningContent.lessons.find(item => item.id === lessonId);
+  const section = current?.sections.find(item => item.id === id);
+  const prompt = index === 'practice' ? section?.practice : section?.prompts[index];
   if (!prompt) return;
   const book = data.notebooks.find(item => item.id === 'philosophy');
   noteModal('','','Philosophy foundations',book?.id || '',{
-   key:'prompt/philosophy-01/' + id + '/' + index,
-   title:section.title + ' · Question ' + (Number(index)+1),
+   key:'prompt/' + lessonId + '/' + id + '/' + index,
+   title:section.title + (index === 'practice' ? ' · Independent practice' : ' · Question ' + (Number(index)+1)),
    body:prompt + '\n\nMy answer\n'
   });
  });
