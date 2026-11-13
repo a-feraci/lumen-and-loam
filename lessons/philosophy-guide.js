@@ -172,7 +172,7 @@
   return '<div data-narration>' + section.paragraphs.map(p => '<p>' + inline(p) + '</p>').join('') +
    tableMarkup(section.table,section.id) + map +
    (section.example ? '<div class="lesson-example">' + esc(section.example) + '</div>' : '') +
-   '<p class="lesson-tip"><strong>★ Study tip</strong> ' + esc(section.tip) + '</p>' +
+   (section.tip ? '<p class="lesson-tip"><strong>★ Study tip</strong> ' + esc(section.tip) + '</p>' : '') +
    (section.exercise ? '<p class="lesson-example">' + esc(section.exercise) + '</p>' : '') + '</div>' + prompts;
  }
  function outline() {
