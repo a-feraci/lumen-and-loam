@@ -13,10 +13,12 @@
   <link rel="stylesheet" href="forest-interactions.css?v=4">
   <link rel="stylesheet" href="learning.css?v=5">
   <link rel="stylesheet" href="study-desk.css?v=6">
-  <link rel="stylesheet" href="forest-places.css?v=8">
+  <link rel="stylesheet" href="forest-places.css?v=9">
+  <link rel="stylesheet" href="world-expansion.css?v=1">
   <script>try{document.documentElement.dataset.forest=localStorage.getItem('lumen-loam-appearance')||(matchMedia('(prefers-color-scheme:dark)').matches?'starfern':'day')}catch{}</script>
 </head>
 <body>
+  <template id="signal-fragment"><!-- SIGNAL_FRAGMENT FLAG{roots_carry_light} --></template>
   <div class="forest-landscape" aria-hidden="true"><img class="landscape-day" src="assets/day-canopy.webp" alt=""><img class="landscape-night" src="assets/starfern-forest.webp" alt=""><div class="landscape-light"></div></div>
   <svg class="glass-filter-defs" aria-hidden="true"><defs><filter id="glass-refraction" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.008 0.014" numOctaves="1" seed="6" result="glass-noise"/><feDisplacementMap in="SourceGraphic" in2="glass-noise" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter></defs></svg>
   <div class="ambient-glow" aria-hidden="true"></div>
@@ -33,6 +35,7 @@
         <a href="#courses" data-page="courses">◈ <span>Canopy Lab</span></a>
         <a href="#tasks" data-page="tasks">☑ <span>Task garden</span></a>
         <a href="#notebooks" data-page="notebooks">▤ <span>Notebooks</span></a>
+        <a href="#study-cards" data-page="study-cards" aria-label="Study cards">▧ <span>Study cards</span></a>
         <a href="#calendar" data-page="calendar">▦ <span>Calendar</span></a>
         <a href="#completed" data-page="completed">✧ <span>Completed</span></a>
       </nav>
@@ -60,16 +63,21 @@
   <script src="lessons/philosophy-01.js?v=4" defer></script>
   <script src="lessons/ai-ethics-01.js?v=5" defer></script>
   <script src="learning-core.js?v=4" defer></script>
-  <script src="learning.js?v=6" defer></script>
-  <script src="app.js?v=7" defer></script>
+  <script src="lessons/philosophy-guide.js?v=1" defer></script>
+  <script src="lesson-audio.js?v=2" defer></script>
+  <script src="study-cards.js?v=1" defer></script>
+  <script src="signal-class.js?v=1" defer></script>
+  <script src="learning.js?v=7" defer></script>
+  <script src="app.js?v=8" defer></script>
   <script src="desk-core.js?v=6" defer></script>
   <script src="study-desk.js?v=7" defer></script>
-  <script src="forest-places-core.js?v=7" defer></script>
-  <script src="forest-places.js?v=8" defer></script>
+  <script src="forest-places-core.js?v=8" defer></script>
+  <script src="forest-places.js?v=9" defer></script>
   <script src="creature-art.js?v=7" defer></script>
   <script src="riddle-trail.js?v=7" defer></script>
   <script src="living-forest.js?v=3" defer></script>
   <script src="navigation.js?v=3" defer></script>
   <script src="forest-games.js?v=7" defer></script>
+  <script src="world-trails.js?v=1" defer></script>
 </body>
 </html>
